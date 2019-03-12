@@ -3,7 +3,7 @@ import React from 'react';
 const Grocery = ({ id, name, complete, handleClick }) => (
   <li
     style = { complete ? { ...styles.complete } : {...styles.grocery } }
-    onclick = {() => handleClick(id)}
+    onClick = {() => handleClick(id)}
   >
     { name }
   </li>
